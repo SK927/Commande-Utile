@@ -1,0 +1,59 @@
+#ADMINS
+  admin/wcif_functions.php
+
+#APP_ID
+  oauth/oauth_credentials.php
+
+#APP_SECRET
+  oauth/oauth_credentials.php
+
+#BASEFTP
+  admin/extract_csv.php
+  cron/cron_delete_outdated_sessions.php
+  cron/cron_update_competitions.php
+  layout/header.php
+  mysql/mysql_connect.php
+  sessions/session_quit.php
+
+#DB
+  mysql/mysql_credentials.php
+  
+#HOST
+  mysql/mysql_credentials.php  
+ 
+#IV
+  includes/encrypt_functions.php
+  
+#KEY
+  includes/encrypt_functions.php
+
+#PASSWORD
+  mysql/mysql_credentials.php
+
+#PREFIX
+  admin/extract_csv.php	
+  admin/delete_order.php
+  admin/display_orders_info.php
+  admin/update_close_date.php
+  admin/update_email.php
+  admin/update_info.php
+  admin/update_item_list.php
+  admin/toggle_given.php
+  admin/toggle_paid.php
+  cron/cron_delete_outdated_sessions.php
+  cron/cron_update_competitions.php
+  includes/get_competition_data.php
+  admin/wcif_functions.php 
+  manage/management_functions.php
+  manage/send.php
+  oauth/request_credentials.php
+  order/retrieve_order_data.php
+  order/confirmation_functions.php
+  select_competition.php
+  sessions/mysql_session_handler.php 
+  
+#URL
+  .htaccess 
+  
+#USERNAME
+  mysql/mysql_credentials.php

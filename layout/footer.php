@@ -4,7 +4,7 @@
             <img src="<? echo $baseUrl; ?>/img/favicon.png" alt="CU logo" />
           </picture>
         </span>
-        <span>© 2021-<?php echo date("Y"); ?> <a href="mailto:maxlefe@bvre.fr">Maxime Lefebvre</a> avec l'aimable soutien de Jean-Baptiste Tar</span>
+        <span>© 2021-<?php echo date("Y"); ?> <a href="mailto:maxlefe@bvre.fr">Maxime Lefebvre</a> avec l'aimable soutien de Jean-Baptiste Tar (<a href="https://github.com/SK927/Commande-Utile">GitHub</a>)</span>
       </div>
     </div>
         

@@ -1,7 +1,7 @@
 <?php
   
-  include("#BASEFTP/mysql/mysql_connect.php");
-  include("#BASEFTP/includes/wcif_functions.php");
+  include("#BASEFTPmysql/mysql_connect.php");
+  include("#BASEFTPincludes/wcif_functions.php");
 
   $results = $conn->query("SELECT ID_Comp FROM #PREFIX_Main");
    

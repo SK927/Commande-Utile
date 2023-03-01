@@ -31,7 +31,7 @@
       {
         $name = addslashes($json->name);
         $competitors = "";
-        $admins = "#ADMINS"; /* Add default admins here if needed, leave brackets */
+        $admins = "";
 
         /* If person is orga or delegate, add to admins
            Add to competitors in any case */

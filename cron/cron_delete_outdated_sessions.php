@@ -1,6 +1,6 @@
 <?php
 
-  include("#BASEFTP/mysql/mysql_connect.php");
+  include("#BASEFTPmysql/mysql_connect.php");
   
   $past = time() - 1800;
 

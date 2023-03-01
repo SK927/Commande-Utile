@@ -1,7 +1,6 @@
       <div id="copyright" class="col-12 mb-3">
         <span>
           <picture>
-            <source srcset="<? echo $baseUrl; ?>/img/favicon_dark.png" media="(prefers-color-scheme:dark)">
             <img src="<? echo $baseUrl; ?>/img/favicon.png" alt="CU logo" />
           </picture>
         </span>

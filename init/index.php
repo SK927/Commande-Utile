@@ -22,8 +22,6 @@
     <div class="container text-center">
       <form action="init_project.php" method="POST" style="width:100%">
         <div class="row content rounded-bottom rounded-lg my-3 p-5">
-          <div class="col-6"><label for="Admins">Admins WCA User Id (as [UserID1][UserID2]...)</label></div>
-          <div class="col-6 mb-4"><input name="Admins" class="form-control rounded text-center" type="text" /></div>
           <div class="col-6"><label for="Prefix">DB Tables Prefix</label></div>
           <div class="col-6 mb-4"><input name="Prefix" class="form-control rounded text-center" type="text" /></div>
           <div class="col-6"><label for="App_Id">WCA Application ID</label></div>

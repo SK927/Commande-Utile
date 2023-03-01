@@ -20,7 +20,8 @@
         <div class="col-10 mx-auto my-3"> 
 <?php       
             
-    $results = $conn->query("SELECT * FROM #PREFIX_Main WHERE Competitors LIKE '$user' AND Close_Date >= NOW() ORDER BY ID_Comp ASC;");  
+    if($_SESSION['Is_SuperAdmin']) $results = $conn->query("SELECT * FROM #PREFIX_Main WHERE ID_Comp != 'SuperAdmin' ORDER BY ID_Comp ASC;"); 
+    else $results = $conn->query("SELECT * FROM #PREFIX_Main WHERE Competitors LIKE '$user' AND Close_Date >= NOW() ORDER BY ID_Comp ASC;");  
   
     if($results->num_rows) /* Display competition the competitor partcipates in */
     { 
@@ -47,8 +48,8 @@
 
     if($_SESSION['Is_Admin'])
     {          
-
-      $results = $conn->query("SELECT * FROM #PREFIX_Main WHERE Admins LIKE '$user' ORDER BY ID_Comp ASC;");           
+      if($_SESSION['Is_SuperAdmin']) $results = $conn->query("SELECT * FROM #PREFIX_Main WHERE ID_Comp != 'SuperAdmin' ORDER BY ID_Comp ASC;"); 
+      else $results = $conn->query("SELECT * FROM #PREFIX_Main WHERE Admins LIKE '$user' ORDER BY ID_Comp ASC;");           
       
       if($results->num_rows) /* Display competition the competitor partcipates in as organizer and/or Delegate */
       { 

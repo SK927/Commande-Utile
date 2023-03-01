@@ -36,21 +36,8 @@
   
   if($pass)
   {
-    echo "BASE FTP replacement OK...<br/>";
+    echo "BASE FTP replacement OK...<br/>";   
     
-    #ADMINS
-    $list = array("../includes/wcif_functions.php");
-    foreach($list as $path) $pass = $pass AND replace_string($path, "#ADMINS", $_POST['Admins']);
-  }
-  else
-  {
-    echo "<b>BASEFTP replacement NOK...</b><br/>";
-  }
-  
-  if($pass)
-  {
-      echo "ADMINS replacement OK...<br/>";
-        
     #PREFIX_
     $list = array(
                   "../admin/delete_order.php",
@@ -78,7 +65,7 @@
   }
   else
   {
-    echo "<b>ADMINS replacement NOK...</b><br/>";
+    echo "<b>BASEFTP replacement NOK...</b><br/>";
   }
     
   if($pass)

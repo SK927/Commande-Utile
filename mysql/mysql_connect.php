@@ -1,6 +1,6 @@
 <?php
 
-  include("#BASEFTP/mysql/mysql_credentials.php");
+  include("#BASEFTPmysql/mysql_credentials.php");
 
   /* Connect */
   mysqli_report(MYSQLI_REPORT_STRICT);

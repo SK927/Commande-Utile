@@ -1,6 +1,3 @@
-#ADMINS
-  admin/wcif_functions.php
-
 #APP_ID
   oauth/oauth_credentials.php
 

@@ -67,14 +67,14 @@
   
 ?>
               <div class="col-md-6 col-lg-4 col-xl-3 item-order my-2">
-                <div class="card">
+                <div class="card rounded rounded-lg">
                   <img class="card-img-top my-2 mx-auto" src="../img/icons/<?php echo trim($itemValue['Item-Image']); ?>" alt="<?php echo htmlspecialchars(trim($itemValue['Item-Name'])); ?>">
                   <div class="card-footer">
                     <h5 class="card-title"><?php echo htmlspecialchars($itemValue['Item-Name'])." (".$itemValue['Item-Price']."&nbsp;€)"; ?></h5>
                     <p class="card-text description"><?php echo htmlspecialchars($itemValue['Item-Descr']); ?></p>
-                    <div class="button sub" onclick="updateValue('<?php echo $itemKey; ?>', <?php echo $itemValue['Item-Price']; ?>, -1);">-</div>
-                    <input id="<?php echo $itemKey; ?>" type="number" min=0 id="<?php echo $itemKey; ?>" name="<?php echo $itemKey; ?>" value="<?php echo $dataBlock[$itemValue['Item-Name']]; ?>" />
-                    <div class="button add" onclick="updateValue('<?php echo $itemKey; ?>', <?php echo $itemValue['Item-Price']; ?>, 1);">+</div>
+                    <div class="button sub rounded-left rounded-lg" onclick="updateValue('<?php echo $itemKey; ?>', <?php echo $itemValue['Item-Price']; ?>, -1);">-</div>
+                    <input id="<?php echo $itemKey; ?>" type="number" class="rounded rounded-lg" min=0 id="<?php echo $itemKey; ?>" name="<?php echo $itemKey; ?>" value="<?php echo $dataBlock[$itemValue['Item-Name']]; ?>" />
+                    <div class="button add rounded-right rounded-lg" onclick="updateValue('<?php echo $itemKey; ?>', <?php echo $itemValue['Item-Price']; ?>, 1);">+</div>
                   </div>
                 </div>
               </div>      
